@@ -129,6 +129,7 @@ button i.fa {
 .list-style-none {
   list-style: none;
 }
+/*Mobile Menu button*/
 .btn-ghost {
   color: #78E2A0;
   background-color: transparent;
@@ -348,6 +349,8 @@ SIDEBAR + RIGHT COLUMN
   color: #999999;
   font-size: 14px;
 }
+
+/*Menu Links on sidebar*/
 .sidebar-menu {
   list-style-type: none;
   padding-left: 20px;
@@ -379,6 +382,7 @@ SIDEBAR + RIGHT COLUMN
 .sidebar-menu li:hover:before {
   color: #78E2A0;
 }
+/*Where the portfolio pieces show*/
 .content-column {
   padding-top: 40px;
 }
@@ -417,6 +421,7 @@ SIDEBAR + RIGHT COLUMN
   margin: 0 5px 0 -15px;
   color: #78E2A0;
 }
+/*Mobile Version*/
 .small-navbar {
   margin-bottom: 20px;
 }
@@ -431,7 +436,7 @@ SIDEBAR + RIGHT COLUMN
 .small-navbar-heading {
   float: right;
   font-size: 18px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 0.1em;
   margin-top: 10px;
 }
@@ -451,6 +456,7 @@ SIDEBAR + RIGHT COLUMN
 =====================
 OFF-CANVAS SIDEBAR BEHAVIOUR
 =====================
+(SIDEBAR WHEN IN MOBILE VIEW)
 */
 @media screen and (max-width: 767px) {
   .row-offcanvas {
@@ -825,6 +831,7 @@ a:active {
   margin-right: 0px;
   margin-left: 0px;
 }
+/*Portfolio boxes*/
 .box-masonry {
   background: #fff;
   margin-bottom: 30px;
@@ -842,7 +849,7 @@ a:active {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 700;
-  text-transform: lowercase;
+  text-transform: capitalize;
   letter-spacing: 0.1em;
   color: #000;
 }
