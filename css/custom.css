@@ -325,7 +325,7 @@ SIDEBAR + RIGHT COLUMN
 @media screen and (min-width: 992px) {
   .sidebar-content {
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 45px;
   }
 }
 .sidebar-heading {
@@ -846,7 +846,7 @@ a:active {
 
 /* Boxes Title text */
 .box-masonry h4 {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
   font-weight: 700;
   text-transform: capitalize;
@@ -868,13 +868,13 @@ a:active {
   color: #78E2A0;
   text-decoration: none;
 }
-/* Boxes body text */
+/* Boxes (with text under) body text */
 .box-masonry .box-masonry-text {
   padding: 15px 20px 15px;
 }
 .box-masonry .box-masonry-text p {
-  color: #999999;
-  font-size: 14px;
+  color: #555555;
+  font-size: 16px;
 }
 /* Full image boxes */
 .box-masonry .box-masonry-hover-text-header {
@@ -890,8 +890,9 @@ a:active {
   color: #555555;
 }
 .box-masonry .box-masonry-hover-text-header p {
-  font-size: 14px;
+  font-size: 16px;
 }
+/*Full Image box title*/
 .box-masonry .box-masonry-hover-text-header h4 a {
   color: #000;
 }
@@ -920,8 +921,9 @@ a:active {
 .box-masonry:hover .box-masonry-hover-center {
   opacity: 1;
 }
+/*How opaque boxes become on hover*/
 .box-masonry:hover .box-masonry-image.with-hover-overlay:before {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .box-masonry:hover .box-masonry-image.with-hover-icon:after {
   opacity: 1;
