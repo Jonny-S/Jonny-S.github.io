@@ -532,43 +532,7 @@ SERVICES / INTEGRATIONS
   margin-bottom: 60px;
   color: #999999;
 }
-/*
-=====================
-CUSTOMERS
-=====================
-*/
-.customer {
-  text-align: center;
-}
-.customer img {
-  display: inline-block;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-.customer img:hover {
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
-}
-/*
-=====================
-SIGN UP FORM
-=====================
-*/
-@media (max-width: 991px) {
-  .sign-up-form .form-control {
-    margin-bottom: 20px;
-  }
-  .sign-up-form .btn {
-    margin-bottom: 20px;
-  }
-}
-@media (min-width: 768px) {
-  .sign-up-form .form-control {
-    width: 350px;
-  }
-}
+
 /*
 =====================
 SOCIAL LINKS
@@ -667,12 +631,12 @@ COPYRIGHT
 }
 @media (max-width: 991px) {
   .copyright p.credit {
-    text-align: center !important;
+    text-align: left !important;
   }
 }
 @media (max-width: 991px) {
   .copyright {
-    text-align: center !important;
+    text-align: left !important;
   }
 }
 /*
@@ -932,8 +896,9 @@ a:active {
 .box-masonry p:last-child {
   margin-bottom: 0;
 }
+/* Background canvas for image - changed from block to '-webkit-flex' to fix scaling issues with video*/
 .box-masonry .box-masonry-image {
-  display: block;
+  display: -webkit-flex;
   position: relative;
   min-height: 100px;
   background: #ccc;
