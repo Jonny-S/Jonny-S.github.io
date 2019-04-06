@@ -131,7 +131,7 @@ button i.fa {
 }
 /*Mobile Menu button*/
 .btn-ghost {
-  color: #78E2A0;
+  color: #000;
   background-color: transparent;
   border-color: #78E2A0;
 }
@@ -436,6 +436,8 @@ SIDEBAR + RIGHT COLUMN
 .small-navbar-heading {
   float: right;
   font-size: 18px;
+  /*Below sets heading size as percentage of viewport width to prevent it appearing below on narrow devices*/
+  font-size: 3.7vw;
   text-transform: capitalize;
   letter-spacing: 0.1em;
   margin-top: 10px;
@@ -461,9 +463,9 @@ OFF-CANVAS SIDEBAR BEHAVIOUR
 @media screen and (max-width: 767px) {
   .row-offcanvas {
     position: relative;
-    -webkit-transition: all 0.25s ease-out;
-    -o-transition: all 0.25s ease-out;
-    transition: all 0.25s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
     opacity: 1;
   }
   .row-offcanvas-right {
@@ -477,21 +479,22 @@ OFF-CANVAS SIDEBAR BEHAVIOUR
     /* 6 columns */
   }
   .row-offcanvas-left .sidebar-offcanvas {
-    left: -48%;
+    left: -75%;
     /* 6 columns */
   }
   .row-offcanvas-right.active {
     right: 50%;
     /* 6 columns */
   }
+  /* How far drawer comes out*/
   .row-offcanvas-left.active {
-    left: 50%;
+    left: 82%;
     /* 6 columns */
   }
   .sidebar-offcanvas {
     position: absolute;
     top: 0;
-    width: 50%;
+    width: 75%;
     /* 6 columns */
   }
 }
@@ -532,43 +535,7 @@ SERVICES / INTEGRATIONS
   margin-bottom: 60px;
   color: #999999;
 }
-/*
-=====================
-CUSTOMERS
-=====================
-*/
-.customer {
-  text-align: center;
-}
-.customer img {
-  display: inline-block;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-.customer img:hover {
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
-}
-/*
-=====================
-SIGN UP FORM
-=====================
-*/
-@media (max-width: 991px) {
-  .sign-up-form .form-control {
-    margin-bottom: 20px;
-  }
-  .sign-up-form .btn {
-    margin-bottom: 20px;
-  }
-}
-@media (min-width: 768px) {
-  .sign-up-form .form-control {
-    width: 350px;
-  }
-}
+
 /*
 =====================
 SOCIAL LINKS
@@ -667,12 +634,12 @@ COPYRIGHT
 }
 @media (max-width: 991px) {
   .copyright p.credit {
-    text-align: center !important;
+    text-align: left !important;
   }
 }
 @media (max-width: 991px) {
   .copyright {
-    text-align: center !important;
+    text-align: left !important;
   }
 }
 /*
@@ -831,6 +798,8 @@ a:active {
   margin-right: 0px;
   margin-left: 0px;
 }
+
+
 /*Portfolio boxes*/
 .box-masonry {
   background: #fff;
@@ -843,7 +812,6 @@ a:active {
   overflow: hidden; 
   text-overflow: ellipsis;
 }
-
 /* Boxes Title text */
 .box-masonry h4 {
   font-size: 20px;
@@ -932,8 +900,9 @@ a:active {
 .box-masonry p:last-child {
   margin-bottom: 0;
 }
+/* Background canvas for image - changed from block to '-webkit-flex' to fix scaling issues with video*/
 .box-masonry .box-masonry-image {
-  display: block;
+  display: -webkit-flex;
   position: relative;
   min-height: 100px;
   background: #ccc;
