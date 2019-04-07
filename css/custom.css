@@ -131,7 +131,7 @@ button i.fa {
 }
 /*Mobile Menu button*/
 .btn-ghost {
-  color: #000;
+  color: #78E2A0;
   background-color: transparent;
   border-color: #78E2A0;
 }
@@ -385,6 +385,7 @@ SIDEBAR + RIGHT COLUMN
 /*Where the portfolio pieces show*/
 .content-column {
   padding-top: 40px;
+
 }
 .content-column.white-background {
   background: #fff;
@@ -424,6 +425,9 @@ SIDEBAR + RIGHT COLUMN
 /*Mobile Version*/
 .small-navbar {
   margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  
 }
 .small-navbar:before,
 .small-navbar:after {
@@ -434,13 +438,14 @@ SIDEBAR + RIGHT COLUMN
   clear: both;
 }
 .small-navbar-heading {
+  width:60%;
+  position: relative;
   float: right;
-  font-size: 18px;
-  /*Below sets heading size as percentage of viewport width to prevent it appearing below on narrow devices*/
-  font-size: 3.7vw;
-  text-transform: capitalize;
+  margin: auto;
+  text-align: right;
+  font-size: 16px;
+  text-transform: none;
   letter-spacing: 0.1em;
-  margin-top: 10px;
 }
 .small-navbar-heading a {
   color: #000;
