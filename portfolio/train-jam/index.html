@@ -64,13 +64,13 @@ blockquote {
   <div id="all">
       <div class="container-fluid">
           <div class="row row-offcanvas row-offcanvas-left">
-              <div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+              <div id="sidebar" class="col-12 col-md-4 col-lg-3 sidebar-offcanvas">
   <div class="sidebar-content">
     <h1 class="sidebar-heading"><a href="https://jonny-s.github.io">Jonny Shaw / Game Programmer</a></h1>
     
       <p class="sidebar-p">I'm a game programmer currently studying a Masters in Professional Games Development. Previously working as a digital designer.</p>
     
-      <p class="sidebar-p">Currently in Dundee, Scotland.</p>
+      <p class="sidebar-p">Dundee, Scotland.</p>
     
     <ul class="sidebar-menu">
       
@@ -119,19 +119,21 @@ blockquote {
 </div>
 
               
-<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
-  <div class="small-navbar visible-xs">
-  <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
-  <h1 class="small-navbar-heading"><a href="https://jonny-s.github.io">Jonny Shaw / Game Programmer</a></h1>
+<div class="col-12 col-md-8 col-lg-9 content-column white-background">
+  <div class="small-navbar d-md-none">
+    <button type="button" data-toggle="offcanvas" class="btn btn-ghost float-left"> <i class="fa fa-align-left"> </i>Menu</button>
+     <h1 class="small-navbar-heading"><a href="https://jonny-s.github.io">Jonny Shaw / Game Programmer</a></h1>
 </div>
-
   <div class="row">
-    <div class="col-lg-10">
+    <div class="col-xl-10">
       <div class="content-column-content">
          <h1>Train Jam!</h1>
          <p>A first person cooperative game inspired by the Train Jam. Currently a WIP, it is built in <strong>Unreal Engine 4</strong> with logic created using <strong>Blueprints</strong>.</p>
 
-<video width=100% height=100% muted autoplay loop src="/media/portfolio/TrainJam/TrainJam1.webm"></video>
+<video class = "video-content" width=100% height=100% autoplay loop muted playsinline>
+	<source src="/media/portfolio/TrainJam/TrainJam1.mp4" type="video/mp4">
+	Your browser does not support HTML video.
+</video>
 
 <p></p>
 
@@ -141,7 +143,10 @@ blockquote {
 The train models communicate with a &lsquo;timetable&rsquo; created by colleagues to trigger an arrival or departure.
 This game logic is modular allowing it to be interfaced with by other blueprints.</p>
 
-<video width=100% height=100% muted autoplay loop src="/media/portfolio/TrainJam/TrainJam2.webm"></video>
+<video class = "video-content" width=100% height=100% autoplay loop muted playsinline>
+	<source src="/media/portfolio/TrainJam/TrainJam2.mp4" type="video/mp4">
+	Your browser does not support HTML video.
+</video>
 
 <p></p>
          

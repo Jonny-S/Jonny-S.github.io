@@ -7,6 +7,7 @@ $(function () {
     highlightCurrentPage();
     makeImagesResponsive();
 });
+
 function highlightCurrentPage() {
   $("a[href='" + location.href + "']").parent().addClass("active");
 }
@@ -27,17 +28,42 @@ function carousels() {
 	afterInit: ''
     });
 }
+
+/* =========================================
+ *  check vids loaded before laying out masonry
+ *  =======================================*/
+ 
+function waitForVidLoad(vids, callback) {
+/* if no videos i.e. mobile mode only gifs and jpgs then call callback else masonry breaks.*/
+	if(vids.length === 0){
+		callback();
+		console.log('Vids Length =' + vids.length);
+	}
+    var vidsLoaded = 0;
+    vids.on('loadeddata', function() {
+      vidsLoaded++;
+      if (vids.length === vidsLoaded) {
+		callback();
+      }
+    });
+  }
+  
 /* =========================================
  *  masonry
  *  =======================================*/
 function masonry() {
     var $grid = $('.grid').masonry({
         itemSelector: ".masonry-item"
-    });
-    $grid.imagesLoaded().progress(function () {
-        $grid.masonry('layout');
+    });	
+	///////Code for sizing masonry AFTER video and image load///////////
+	var vids = $grid.find('video');
+	waitForVidLoad(vids, function() {
+    $grid.imagesLoaded(function() {
+      $grid.masonry('layout');
+      });
     });
 }
+
 /* =========================================
  *  Off-canvas menu
  *  =======================================*/
