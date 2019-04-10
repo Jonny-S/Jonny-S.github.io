@@ -8,6 +8,7 @@ GENERAL
 html,
 body {
   overflow-x: hidden;
+  -ms-overflow-style: none;
   /* Prevent scroll on narrow devices */
 }
 header {
@@ -408,7 +409,9 @@ SIDEBAR + RIGHT COLUMN
 }
 .grid {
   padding-top: 5px;
+  padding-bottom: 5px;
   overflow-y: hidden;
+  -ms-overflow-style: none;
 }
 .content-column-content {
   padding-left: 20px;
@@ -1812,6 +1815,7 @@ fieldset[disabled] .btn-transparent.active {
 }
 /* forms.less */
 label {
+  margin-top: 20px;
   font-weight: normal;
   color: #555555;
   font-size: 0.875rem;
