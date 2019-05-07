@@ -36,7 +36,7 @@
 
 
 
-<link lazyload="1" href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800|Karla|Titillium%20Web|Frank%20Ruhl%20Libre|Domine|Roboto' rel='stylesheet' type='text/css'>
+<link lazyload="1" href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800|Karla|Quicksand|Frank%20Ruhl%20Libre|Domine|Roboto|Quicksand' rel='stylesheet' type='text/css'>
 
 <style>
 body {
@@ -45,7 +45,7 @@ body {
 
 h1, h2, h3,
 h4, h5, h6 {
-    font-family: 'Titillium Web';
+    font-family: 'Quicksand';
 }
 
 blockquote {
@@ -58,6 +58,10 @@ blockquote {
 }
 .post-content p {
     font-family: 'Roboto'
+}
+
+.box-masonry h4 {
+	font-family: 'Quicksand'
 }
 </style></head>
 <body>
@@ -75,6 +79,8 @@ blockquote {
     <ul class="sidebar-menu">
       
         <li><a href="https://jonny-s.github.io/portfolio/">Portfolio</a></li>
+      
+        <li><a href="https://jonny-s.github.io/testimonials/">Testimonials</a></li>
       
         <li><a href="https://jonny-s.github.io/about/">About</a></li>
       
@@ -135,18 +141,50 @@ Created in <span style="color:#78E2A0"><strong>Unity</strong></span> and scripte
 to guide the water around each plane of an architectural stack.
 When the player reaches the goal on each table a new table replaces it, creating <strong>perpetual motion</strong> and <strong>randomly shuffled</strong> game spaces.</p>
 
-<video class = "video-content" width=100% height=100% autoplay loop muted playsinline>
-	<source src="/media/portfolio/CoffeeTable/CoffeeTable.mp4" type="video/mp4">
+<div class = "video-content">
+<video width=100% height=100% autoplay loop muted playsinline>
+	<source src="/media/portfolio/CoffeeTable/Water1.mp4" type="video/mp4">
 	Your browser does not support HTML video.
 </video>
-
-<p></p>
+</div>
 
 <h5 id="fully-customisable-in-editor">Fully customisable in editor</h5>
 
 <p>The code for the fluid, natural movement and table level offset has been written with design iteration in mind.
 The number and scale of tables created, animation offset speed/delay and distance from one another is set in the engine editor.
 The dynamic code is built to allow for constant tweaking and refinement.</p>
+
+<figure>
+    <img src="/img/portfolio/CoffeeTable/tools.JPG" width="100%"/> 
+</figure>
+
+
+<h5 id="wwise-audio-integration">Wwise Audio Integration</h5>
+
+<p>I have integrated Wwise middleware into the project. Combined with audio from a sound designer and accessible parameters
+such as volume and state changes; in this case it is used to play the audio from different flutes depending where the water
+travels through.</p>
+
+<div class = "video-content">
+<video width=100% height=100% autoplay loop muted playsinline>
+	<source src="/media/portfolio/CoffeeTable/Pipes.mp4" type="video/mp4">
+	Your browser does not support HTML video.
+</video>
+</div>
+
+<h5 id="natural-smooth-animations">Natural, smooth animations</h5>
+
+<p>Using spherical linear interpolation and animation curves - accessible in the editor - in code, the table stack has completely fluid motion.
+By continually tracking the top table&rsquo;s rotation over the last &lsquo;x&rsquo; number of seconds, I have created a rotation delay down the stack
+that creates a wave effect. The table &lsquo;shuffle&rsquo; triggered by completing a table loops through the logical list and reorders based on
+current and target position, allowing for an endless loop.</p>
+
+<div class = "video-content">
+<video width=100% height=100% autoplay loop muted playsinline>
+	<source src="/media/portfolio/CoffeeTable/Transition.mp4" type="video/mp4">
+	Your browser does not support HTML video.
+</video>
+</div>
          
       </div>
     </div>

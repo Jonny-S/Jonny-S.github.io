@@ -18,8 +18,7 @@
       
       <guid>https://jonny-s.github.io/portfolio/the-veil/</guid>
       <description>&lt;p&gt;A 2D puzzle platformer built in &lt;span style=&#34;color:#78E2A0&#34;&gt;&lt;strong&gt;Unity&lt;/strong&gt;&lt;/span&gt; engine and coded in &lt;span style=&#34;color:#78E2A0&#34;&gt;&lt;strong&gt;C#&lt;/strong&gt;&lt;/span&gt;.
-I was responsible for programming all game logic (including camera, characters and controls) and all asset implementation as the sole developer
-in engine. A team project, I worked closely with a Designer, Artist and Audio developer.&lt;/p&gt;</description>
+I was responsible for programming all game logic (including camera, characters and controls) and all asset implementation as the sole developer in engine. A team project, I worked closely with a Designer, Artist and Audio developer.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -39,15 +38,6 @@ Created in &lt;span style=&#34;color:#78E2A0&#34;&gt;&lt;strong&gt;Unity&lt;/str
       
       <guid>https://jonny-s.github.io/portfolio/train-jam/</guid>
       <description>&lt;p&gt;A first person cooperative game inspired by the Train Jam. Currently a WIP, it is built in &lt;strong&gt;Unreal Engine 4&lt;/strong&gt; with logic created using &lt;strong&gt;Blueprints&lt;/strong&gt;.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Testimonials</title>
-      <link>https://jonny-s.github.io/portfolio/testimonials/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jonny-s.github.io/portfolio/testimonials/</guid>
-      <description>&lt;p&gt;Regarding my work and professional persona.&lt;/p&gt;</description>
     </item>
     
   </channel>

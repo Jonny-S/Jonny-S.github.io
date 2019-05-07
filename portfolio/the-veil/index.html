@@ -36,7 +36,7 @@
 
 
 
-<link lazyload="1" href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800|Karla|Titillium%20Web|Frank%20Ruhl%20Libre|Domine|Roboto' rel='stylesheet' type='text/css'>
+<link lazyload="1" href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800|Karla|Quicksand|Frank%20Ruhl%20Libre|Domine|Roboto|Quicksand' rel='stylesheet' type='text/css'>
 
 <style>
 body {
@@ -45,7 +45,7 @@ body {
 
 h1, h2, h3,
 h4, h5, h6 {
-    font-family: 'Titillium Web';
+    font-family: 'Quicksand';
 }
 
 blockquote {
@@ -58,6 +58,10 @@ blockquote {
 }
 .post-content p {
     font-family: 'Roboto'
+}
+
+.box-masonry h4 {
+	font-family: 'Quicksand'
 }
 </style></head>
 <body>
@@ -75,6 +79,8 @@ blockquote {
     <ul class="sidebar-menu">
       
         <li><a href="https://jonny-s.github.io/portfolio/">Portfolio</a></li>
+      
+        <li><a href="https://jonny-s.github.io/testimonials/">Testimonials</a></li>
       
         <li><a href="https://jonny-s.github.io/about/">About</a></li>
       
@@ -129,41 +135,58 @@ blockquote {
       <div class="content-column-content">
          <h1>The Veil</h1>
          <p>A 2D puzzle platformer built in <span style="color:#78E2A0"><strong>Unity</strong></span> engine and coded in <span style="color:#78E2A0"><strong>C#</strong></span>.
-I was responsible for programming all game logic (including camera, characters and controls) and all asset implementation as the sole developer
-in engine. A team project, I worked closely with a Designer, Artist and Audio developer.</p>
+I was responsible for programming all game logic (including camera, characters and controls) and all asset implementation as the sole developer in engine. A team project, I worked closely with a Designer, Artist and Audio developer.</p>
 
 <h4 id="about">About</h4>
 
-<p>The player assumes the role of <span style="color:#78E2A0"><strong>Raven</strong></span> a young woman who upon exploring an ancient temple is taken into
-another dimension by a mysterious veil artifact. The veil binds itself to her and she must escape using transforming puzzle mechanics that transport her between planes and versions of the temple.</p>
+<p>The player assumes the role of <span style="color:#78E2A0"><strong>Raven</strong></span> a young woman who upon exploring an ancient temple is taken into another dimension by a mysterious veil artifact. The veil binds itself to her and she must escape using transforming puzzle mechanics that transport her between planes and versions of the temple.</p>
 
 <h5 id="level-plane-navigation">Level &lsquo;Plane&rsquo; Navigation</h5>
 
-<video class = "video-content" width=100% height=100% autoplay loop muted playsinline>
+<p>A unique gameplay mechanic was implemented that gives the game world depth to solve puzzles and surpass obstacles.</p>
+
+<div class = "video-content">
+<video width=100% height=100% autoplay loop muted playsinline>
 	<source src="/media/portfolio/TheVeil/Platform.mp4" type="video/mp4">
 	Your browser does not support HTML video.
 </video>
+</div>
 
-<p>A unique gameplay mechanic was implemented that gives the game world depth to solve puzzles and surpass obstacles.
-As a fully 2D game, this required a custom dynamic collision layer switching system to set collisions relative to the players current plane and animate accordingly.</p>
+<p>This was prototyped early on in development due to the challenge of it being a fully 2D game. It required the creation of a dynamic collision layer switching system to set collisions relative to the players current plane and sync up with animations.</p>
 
-<h5 id="dialogue-system">Dialogue System</h5>
+<h5 id="audio-integration">Audio Integration</h5>
 
-<video class = "video-content" width=100% height=100% autoplay loop muted playsinline>
-	<source src="/media/portfolio/TheVeil/Dialogue.mp4" type="video/mp4">
-	Your browser does not support HTML video.
-</video>
-
-<p>Created a dialogue system allowing for back and forth conversations to be set in the editor without code.</p>
+<p>Working closely with an Audio designer we integrated the <em>Audiokinetic</em> middleware <em>Wwise</em>. Learning the nuances and best practices when implementing functionality in code was a great experience, lack of detailed <em>Wwise</em> documentation for the plugin raised a number of challenges throughout development but with great results.</p>
 
 <h5 id="level-rotation-puzzle">Level Rotation Puzzle</h5>
 
-<video class = "video-content" width=100% height=100% autoplay loop muted playsinline>
+<p>The physical planes are able to be rotated to allow the player new interactions when they revisit that area.</p>
+
+<div class = "video-content">
+<video width=100% height=100% autoplay loop muted playsinline>
 	<source src="/media/portfolio/TheVeil/Rotation.mp4" type="video/mp4">
 	Your browser does not support HTML video.
 </video>
+</div>
 
-<p>The physical planes are able to be rotated to allow the player new interactions when they revisit that area.</p>
+<h5 id="dialogue-system">Dialogue System</h5>
+
+<p>Created a dialogue system, allowing for back and forth conversations to be set in the editor without code.</p>
+
+<div class = "video-content">
+<video width=100% height=100% autoplay loop muted playsinline>
+	<source src="/media/portfolio/TheVeil/Dialogue.mp4" type="video/mp4">
+	Your browser does not support HTML video.
+</video>
+</div>
+
+<h5 id="full-playthrough">Full Playthrough:</h5>
+
+<div class="embed-video-player" div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+<iframe class="youtube-player" type="text/html" width=100% height=100% 
+		src="http://www.youtube.com/embed/Im_53TDMepY" allowfullscreen="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;">
+</iframe>
+</div>
          
       </div>
     </div>

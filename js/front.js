@@ -43,6 +43,7 @@ function waitForVidLoad(vids, callback) {
     vids.on('loadeddata', function() {
       vidsLoaded++;
       if (vids.length === vidsLoaded) {
+		  console.log('Vids Length =' + vids.length);
 		callback();
       }
     });
@@ -54,7 +55,10 @@ function waitForVidLoad(vids, callback) {
 function masonry() {
     var $grid = $('.grid').masonry({
         itemSelector: ".masonry-item"
-    });	
+    });
+	$grid.imagesLoaded(function() {
+      $grid.masonry('layout');
+      });
 	///////Code for sizing masonry AFTER video and image load///////////
 	var vids = $grid.find('video');
 	waitForVidLoad(vids, function() {
@@ -179,6 +183,7 @@ $.fn.alignElementsSameHeight = function () {
 $(window).load(function () {
     windowWidth = $(window).width();
     $(this).alignElementsSameHeight();
+	
 });
 $(window).resize(function () {
     newWindowWidth = $(window).width();
